@@ -1,0 +1,6 @@
+.vscode/
+**/__pycache__
+
+# Do not share secret_key
+healing_grapes/secret_key.py
+maps/mapbox_token.json

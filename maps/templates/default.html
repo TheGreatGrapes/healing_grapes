@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive map for tracking Corona cases</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v1.8.1/mapbox-gl.css' rel='stylesheet' />
+</head>
+<body>
+    <h1><center>The healing grapes!</center></h1>
+    <div id='map' width="100%" style='height:850px'></div>
+    <script>
+        mapboxgl.accessToken = '{{mapbox_access_token}}';
+        var map = new mapboxgl.Map({
+            container: 'map',
+            style: 'mapbox://styles/mapbox/streets-v11',
+            center: [9.3, 48.74],
+            zoom: 8
+        });
+    </script>
+</body>
+</html>
